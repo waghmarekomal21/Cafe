@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.4.1/dist/css/glide.core.min.css">
+ 
+  <title>Cafe Home Page</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body class="bg-gray-100"> 
+  <header class="bg-black shadow">
+    <div class="container mx-auto px-4">
+      <nav class="flex items-center justify-between py-4">
+        <a href="#" class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-purple-500">Eva's Cafe</a>
+        <ul class="flex items-center space-x-4">
+          <li><a href="#" class="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-purple-500">Home</a></li>
+          <li><a href="#" class="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-purple-500">Menu</a></li>
+          <li><a href="#" class="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-purple-500">About</a></li>
+          <li><a href="#" class="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-purple-500">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="container mx-auto px-4 py-8">
+
+
+  <div class="flex justify-center items-center h-screen">
+    <div class="w-full max-w-xl">
+      <div class="carousel-container">
+        <div class="carousel-slides">
+          <div class="carousel-slide">
+            <img class="carousel-image" src="img/1.jpg" alt="Image 1">
+          </div>
+          <div class="carousel-slide">
+            <img class="carousel-image" src="img/2.jpg" alt="Image 2">
+          </div>
+          <div class="carousel-slide">
+            <img class="carousel-image" src="img/3.jpg" alt="Image 3">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div>
+        <h2 class="text-3xl font-bold mb-4">Welcome to Eva's Cafe</h2>
+        <p class="text-gray-800">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum felis nec scelerisque posuere. Fusce sit amet sollicitudin orci, at bibendum tortor.</p>
+        <a href="#" class="mt-4 inline-block bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">ViewMenu</a>
+      </div>
+      <div>
+        <img src="img/about.jpg" alt="Cafe Image" class="float-right h-80 w-96">
+      </div>
+    </section>
+
+    <section class="mt-12">
+      <h2 class="text-2xl font-bold mb-4">Our Menu</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <div class="bg-white rounded shadow p-4">
+          <h3 class="text-xl font-bold mb-2">Item 1</h3>
+          <p class="text-gray-800">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut posuere sem id purus
+            malesuada malesuada.</p>
+        </div>
+        <div class="bg-white rounded shadow p-4">
+          <h3 class="text-xl font-bold mb-2">Item 2</h3>
+          <p class="text-gray-800">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut posuere sem id purus
+            malesuada malesuada.</p>
+        </div>
+        <div class="bg-white rounded shadow p-4">
+          <h3 class="text-xl font-bold mb-2">Item 3</h3>
+          <p class="text-gray-800">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut posuere sem id purus
+            malesuada malesuada.</p>
+        </div>
+      </div>
+    </section>
+    
+   
+
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.4.1/dist/glide.min.js"></script>
+    <script>
+      new Glide('.glide', {
+        type: 'carousel',
+        startAt: 0,
+        perView: 1,
+      }).mount();
+    </script>
+  </main>
+
+</body>
+</html>
+ 
