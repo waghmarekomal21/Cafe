@@ -7,10 +7,14 @@
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.4.1/dist/css/glide.core.min.css">
   <script src="https://cdn.tailwindcss.com"></script>
-
+<link rel="stylesheet" href="style.css">
   <title>My Homepage</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-
+  <style>
+    .carh{
+      height: 53rem !important;
+    }
+  </style>
 </head>
 
 <body class="bg-gray-100">
@@ -18,8 +22,7 @@
     <div class="container mx-auto px-4">
       <nav class="flex items-center justify-between py-4">
         <a href="#"
-          class="text-3xl italic font-serif font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-purple-500">Eva's
-          Cafe</a>
+          class="text-3xl italic font-serif font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-purple-500">Eva's Cafe</a>
         <ul class="flex items-center space-x-4">
           <li><a href="home.html"
               class="text-transparent font-serif font-bold bg-clip-text bg-gradient-to-r from-pink-500 to-purple-500">Home</a>
@@ -37,75 +40,60 @@
       </nav>
     </div>
   </header>
+
+
+
   <section>
-    <div class="max-w-xxl mx-auto h-auto">
+    
+    
+    <div class="max-w-xxl mx-auto">
 
       <div id="default-carousel" class="relative" data-carousel="static">
-
-        <div class="overflow-hidden relative h-auto rounded-lg sm:h-64 xl:h-80 2xl:h-96">
-
-          <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <span
-              class="absolute top-1/2 left-1/2 text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 sm:text-3xl ">Primer
-              Slide</span>
-            <img src="img/1.jpg" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"
-              alt="...">
+       
+          <div class="overflow-hidden relative h-56 rounded-lg sm:h-64 xl:h-80 carh">
+             
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                  <!-- <span class="absolute top-1/2 left-1/2 text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 sm:text-3xl ">Primer Slide</span> -->
+                  <img src="img/1.jpg" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+              </div>
+             
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                  <img src="img/2.jpg" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+              </div>
+             
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                  <img src="img/3.jpg" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+              </div>
           </div>
-
-          <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="img/2.jpg" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"
-              alt="...">
-          </div>
-
-          <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="img/3.jpg" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"
-              alt="...">
-          </div>
-
-
-
+          
+          
           <div class="flex absolute bottom-5 left-1/2 z-30 space-x-3 -translate-x-1/2">
-            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 1"
-              data-carousel-slide-to="0"></button>
-            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
-              data-carousel-slide-to="1"></button>
-            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
-              data-carousel-slide-to="2"></button>
+              <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+              <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+              <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
           </div>
-
-          <button type="button"
-            class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
-            data-carousel-prev>
-            <span
-              class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30  group-focus:ring-4 group-focus:ring-white  group-focus:outline-none">
-              <svg class="w-5 h-5 text-white sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
-              </svg>
-              <span class="hidden">Anterior</span>
-            </span>
+         
+          <button type="button" class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-prev>
+              <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30  group-focus:ring-4 group-focus:ring-white  group-focus:outline-none">
+                  <svg class="w-5 h-5 text-white sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                  <span class="hidden">Anterior</span>
+              </span>
           </button>
-          <button type="button"
-            class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
-            data-carousel-next>
-            <span
-              class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 0 group-focus:ring-4 group-focus:ring-white  group-focus:outline-none">
-              <svg class="w-5 h-5 text-white sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-              </svg>
-              <span class="hidden">Siguiente</span>
-            </span>
+          <button type="button" class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-next>
+              <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 0 group-focus:ring-4 group-focus:ring-white  group-focus:outline-none">
+                  <svg class="w-5 h-5 text-white sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                  <span class="hidden">Siguiente</span>
+              </span>
           </button>
-        </div>
-
-
-        <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
       </div>
+  
+      
+      <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
+  </div>
   </section>
   <!-- about section start -->
 
-  <section class="grid grid-cols-1 md:grid-cols-2 gap-8 flex flex-col space-y-1 px-8">
+  <section class="grid grid-cols-1 md:grid-cols-2 gap-8 flex flex-col space-y-1 px-8 py-12">
     <div class="py-12 px-8 mt-12 mx-8">
 
       <h2 class="text-3xl font-serif font-bold mb-4">Welcome to Eva's Cafe</h2>
@@ -113,11 +101,11 @@
         sequi commodi delectus excepturi. Ducimus dolorum, nobis deserunt quidem officiis, est sint doloremque tempore
         laboriosam, doloribus eveniet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum felis
         nec scelerisque posuere. Fusce sit amet sollicitudin orci, at bibendum tortor.</p>
-      <a href="#"
+      <a href="menu.html"
         class="mt-4 inline-block bg-blue-500 hover:bg-blue-600 text-white font-serif font-bold py-2 px-4 rounded">View
         Menu</a>
     </div>
-    <div class="py-8 p-8">
+    <div class="py-8 p-8 abtimg">
       <img src="img/about.jpg" alt="Cafe Image" class="float-right h-80 w-96">
     </div>
     </div>
@@ -127,16 +115,16 @@
   <!-- about section end -->
   <section>
     <h1 class="text-3xl font-serif font-boldmb-4 text-center py-12">Cafe Menu</h1>
-    <div class="container mx-auto py-8 relative bg-cover bg-center h-screen"
-      style="background-image: url('img/burger.jpg');">
+     <!-- <div class="fluid-container mx-auto py-8 relative bg-cover bg-center h-screen" 
+      style="background-image: url('img/burger.jpg');"> -->
 
       <div
-        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 relative bg-cover bg-center py-12 px-8 mt-12 mx-8">
+        class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-4 relative bg-cover bg-center my-8 ">
         <!-- Menu Item 1 -->
-        <div class="max-w-md mx-auto bg-white p-8 shadow-md rounded-md">
+        <div class="max-w-md mx-auto bg-white p-8 shadow-md rounded-md z-30 szimg">
           <!-- <div class="bg-gradient-to-r from-violet-500 to-fuchsia-500 rounded-lg shadow p-4"> -->
           <center>
-            <img src="img/burgerrr (1).png" alt="Menu Item 1" class="w-auto mb-4">
+            <img src="img/burgerrr (1).png" alt="Menu Item 1" class="w-28 mb-4">
             <h2 class="text-lg font-bold">Menu Item 1</h2>
             <p class="text-gray-600">Description of menu item 1.</p>
             <div
@@ -153,7 +141,7 @@
         <!-- <div class="bg-white rounded-lg shadow p-4"> -->
         <div class="max-w-md mx-auto bg-white p-8 shadow-md rounded-md">
           <center>
-            <img src="img/pizza.png" alt="Menu Item 2" class="w-auto mb-4">
+            <img src="img/pizza.png" alt="Menu Item 2" class="w-28 mb-4">
             <h2 class="text-lg font-bold">Menu Item 2</h2>
             <p class="text-gray-600">Description of menu item 2.</p>
             <div
@@ -166,7 +154,7 @@
         <!-- <div class="bg-white rounded-lg shadow p-4"> -->
         <div class="max-w-md mx-auto bg-white p-8 shadow-md rounded-md">
           <center>
-            <img src="img/fries.png" alt="Menu Item 3" class="w-auto mb-4">
+            <img src="img/fries.png" alt="Menu Item 3" class="w-28 mb-4">
             <h2 class="text-lg font-bold">Menu Item 3</h2>
             <p class="text-gray-600">Description of menu item 3.</p>
             <!-- <p class="text-gray-600 mt-2">Price: $8</p> -->
@@ -175,50 +163,52 @@
                 href="#">Read More</a></div>
           </center>
         </div>
-
         <!-- Menu Item 2 -->
         <!-- <div class="bg-white rounded-lg shadow p-4"> -->
-        <div class="max-w-md mx-auto bg-white p-8 shadow-md rounded-md">
-          <center>
-            <img src="img/burgerrr (1).png" alt="Menu Item 4" class="w-auto mb-4">
-            <h2 class="text-lg font-bold">Menu Item 4</h2>
-            <p class="text-gray-600">Description of menu item 4.</p>
-            <div
-              class="text-transparent font-serif font-bold bg-clip-text bg-gradient-to-r from-pink-500 to-purple-500"><a
-                href="#">Read More</a></div>
-          </center>
-        </div>
-
-
-
-        <!-- Menu Item 2 -->
-        <!-- <div class="bg-white rounded-lg shadow p-4"> -->
-        <div class="max-w-md mx-auto bg-white p-8 shadow-md rounded-md">
-          <center>
-            <img src="img/pizza.png" alt="Menu Item 5" class="w-auto mb-4">
-            <h2 class="text-lg font-bold">Menu Item 5</h2>
-            <p class="text-gray-600">Description of menu item 5.</p>
-            <div
-              class="text-transparent font-serif font-bold bg-clip-text bg-gradient-to-r from-pink-500 to-purple-500"><a
-                href="#">Read More</a></div>
-          </center>
-        </div>
-
+          <div class="max-w-md mx-auto bg-white p-8 shadow-md rounded-md">
+            <center>
+              <img src="img/ramen.png" alt="Menu Item 3" class="w-28 mb-4">
+              <h2 class="text-lg font-bold">Menu Item 3</h2>
+              <p class="text-gray-600">Description of menu item 3.</p>
+              <!-- <p class="text-gray-600 mt-2">Price: $8</p> -->
+              <div
+                class="text-transparent font-serif font-bold bg-clip-text bg-gradient-to-r from-pink-500 to-purple-500"><a
+                  href="#">Read More</a></div>
+            </center>
+          </div>
 
 
 
         <!-- Menu Item 2 -->
         <!-- <div class="bg-white rounded-lg shadow p-4"> -->
-        <div class="max-w-md mx-auto bg-white p-8 shadow-md rounded-md">
-          <center>
-            <img src="img/fries.png" alt="Menu Item 6" class="w-auto mb-4">
-            <h2 class="text-lg font-bold">Menu Item 6</h2>
-            <p class="text-gray-600">Description of menu item 6.</p>
-            <div
-              class="text-transparent font-serif font-bold bg-clip-text bg-gradient-to-r from-pink-500 to-purple-500"><a
-                href="#">Read More</a></div>
-          </center>
-        </div>
+      
+          <div class="max-w-md mx-auto bg-white p-8 shadow-md rounded-md">
+            <center>
+              <img src="img/latte.png" alt="Menu Item 3" class="w-28 mb-4">
+              <h2 class="text-lg font-bold">Menu Item 3</h2>
+              <p class="text-gray-600">Description of menu item 3.</p>
+              <!-- <p class="text-gray-600 mt-2">Price: $8</p> -->
+              <div
+                class="text-transparent font-serif font-bold bg-clip-text bg-gradient-to-r from-pink-500 to-purple-500"><a
+                  href="#">Read More</a></div>
+            </center>
+          </div>
+
+
+
+        <!-- Menu Item 2 -->
+        <!-- <div class="bg-white rounded-lg shadow p-4"> -->
+          <div class="max-w-md mx-auto bg-white p-8 shadow-md rounded-md">
+            <center>
+              <img src="img/dumplings.png" alt="Menu Item 3" class="w-28 mb-4">
+              <h2 class="text-lg font-bold">Menu Item 3</h2>
+              <p class="text-gray-600">Description of menu item 3.</p>
+              <!-- <p class="text-gray-600 mt-2">Price: $8</p> -->
+              <div
+                class="text-transparent font-serif font-bold bg-clip-text bg-gradient-to-r from-pink-500 to-purple-500"><a
+                  href="#">Read More</a></div>
+            </center>
+          </div>
 
         <!-- Add more menu items as needed -->
 
@@ -226,68 +216,46 @@
 
 
       <!-- Add more items as needed -->
-    </div>
-    </div>
-    </div>
+   
   </section>
 
 
 
 
-  <section>
-    <!-- <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 relative bg-cover bg-center py-8 px-8 mt-12 mx-8 ">
- <div class="max-w-md mx-auto bg-white p-8 shadow-md rounded-md w-1/2 ">
-    <h2 class="text-2xl font-bold mb-4">Contact Us</h2>
-    <form>
-      <div class="mb-4">
-        <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Name:</label>
-        <input type="text" id="name" name="name" placeholder="Your Name" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500">
-      </div>
-      <div class="mb-4">
-        <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email:</label>
-        <input type="email" id="email" name="email" placeholder="Your Email" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500">
-      </div>
-      <div class="mb-4">
-        <label for="message" class="block text-gray-700 text-sm font-bold mb-2">Message:</label>
-        <textarea id="message" name="message" placeholder="Your Message" rows="4" class="w-full px-3 py-2 border border-gray-300 rounded-md resize-none focus:outline-none focus:border-blue-500"></textarea>
-      </div>
-      <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">Send</button>
-    </form>
-  </div>
-</div> -->
+<section>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 py-12">
-      <div class="col-md-6 padding_0">
-        <div class="map-responsive">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.4560000387705!2d73.94471122722963!3d18.553469587543667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c3c4ea36a8f7%3A0xf585434dc33ce581!2sGLOBAL%20BUSINESS%20HUB%2C%20EON%20Free%20Zone%2C%20Kharadi%2C%20Pune%2C%20Maharashtra%20411014!5e0!3m2!1sen!2sin!4v1687374636726!5m2!1sen!2sin"
-            width="600" height="508" frameborder="0" style="border:0; width: 100%;" allowfullscreen></iframe>
-        </div>
-      </div>
-      <div class="col-span-1 md:col-span-1 bg-white p-4">
-        <!-- Contact Us form -->
-        <h2 class="text-2xl font-serif font-bold mb-4">Contact Us</h2>
-        <form>
-          <div class="mb-4">
-            <label for="name" class="block text-gray-700 text-sm  font-serif font-bold mb-2">Name:</label>
-            <input type="text" id="name" name="name" placeholder="Your Name"
-              class=" font-serif w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500">
-          </div>
-          <div class="mb-4">
-            <label for="email" class="block text-gray-700 text-sm font-serif font-bold mb-2">Email:</label>
-            <input type="email" id="email" name="email" placeholder="Your Email"
-              class=" font-serif w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500">
-          </div>
-          <div class="mb-4">
-            <label for="message" class="block text-gray-700 text-sm font-serif font-bold mb-2">Message:</label>
-            <textarea id="message" name="message" placeholder="Your Message" rows="4"
-              class=" font-serif w-full px-3 py-2 border border-gray-300 rounded-md resize-none focus:outline-none focus:border-blue-500"></textarea>
-          </div>
-          <button type="submit"
-            class="bg-blue-500 hover:bg-blue-600 text-white font-serif font-bold py-2 px-4 rounded">Send</button>
-        </form>
+  <div class="grid grid-cols-1 md:grid-cols-2 py-12">
+    <div class="col-md-6 padding_0">
+      <div class="map-responsive">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.4560000387705!2d73.94471122722963!3d18.553469587543667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c3c4ea36a8f7%3A0xf585434dc33ce581!2sGLOBAL%20BUSINESS%20HUB%2C%20EON%20Free%20Zone%2C%20Kharadi%2C%20Pune%2C%20Maharashtra%20411014!5e0!3m2!1sen!2sin!4v1687374636726!5m2!1sen!2sin"
+          width="600" height="508" frameborder="0" style="border:0; width: 100%;" allowfullscreen></iframe>
       </div>
     </div>
+    <div class="col-span-1 md:col-span-1 bg-white p-4">
+      <!-- Contact Us form -->
+      <h2 class="text-2xl font-serif font-bold mb-4">Contact Us</h2>
+      <form>
+        <div class="mb-4">
+          <label for="name" class="block text-gray-700 text-sm  font-serif font-bold mb-2">Name:</label>
+          <input type="text" id="name" name="name" placeholder="Your Name"
+            class=" font-serif w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500">
+        </div>
+        <div class="mb-4">
+          <label for="email" class="block text-gray-700 text-sm font-serif font-bold mb-2">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Your Email"
+            class=" font-serif w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500">
+        </div>
+        <div class="mb-4">
+          <label for="message" class="block text-gray-700 text-sm font-serif font-bold mb-2">Message:</label>
+          <textarea id="message" name="message" placeholder="Your Message" rows="4"
+            class=" font-serif w-full px-3 py-2 border border-gray-300 rounded-md resize-none focus:outline-none focus:border-blue-500"></textarea>
+        </div>
+        <button type="submit"
+          class="bg-blue-500 hover:bg-blue-600 text-white font-serif font-bold py-2 px-4 rounded">Send</button>
+      </form>
+    </div>
+  </div>
 
 
   </section>
@@ -299,8 +267,8 @@
 
   <!-- footer section start -->
 
-
-  <footer class="bg-gray-900 text-white">
+<section>
+    <footer class="bg-gray-900 text-white">
     <div class="container mx-auto px-4 py-8">
       <div class="flex flex-wrap">
         <div class="w-full md:w-1/4 mb-6 md:mb-0">
@@ -341,7 +309,7 @@
       <p class="text-center text-sm">© 2023 Eva's Cafe. All rights reserved.</p>
     </div>
   </footer>
-
+</section>
 
 
 
